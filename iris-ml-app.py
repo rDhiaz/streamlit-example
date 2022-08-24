@@ -2,13 +2,19 @@ import streamlit as st
 import pandas as pd
 from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
+from PIL import Image
+image = Image.open('https://www.almanac.com/sites/default/files/styles/large/public/image_nodes/iris-flowers.jpg?itok=mvViJxo_')
 
 st.write("""
 # Dhia First App
 # Simple Iris Flower Prediction App
 
+st.image(image, caption='Iris')
+
 This app predicts the **Iris flower** type!
 """)
+
+st.image(
 
 st.sidebar.header('User Input Parameters')
 
@@ -44,7 +50,7 @@ st.write(iris.target_nam)
 
 st.subheader('Prediction')
 st.write(iris.target_names[prediction])
-#st.write(prediction)
+st.write(prediction)
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
