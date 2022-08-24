@@ -1,4 +1,4 @@
-%%writefile streamlitfirst.py
+writefile streamlitfirst.py
 import streamlit as st
 import numpy as np
 import pandas as pd
