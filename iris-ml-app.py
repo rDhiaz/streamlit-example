@@ -17,7 +17,7 @@ with col1:
     st.write(' ')
 
 with col2:
-    st.image(image, caption='Versicolor, Virginica, Setosa', output_format="auto")
+    st.image(image, caption='Versicolor, Virginica, Setosa', use_column_width=False)
 
 with col3:
     st.write(' ')
