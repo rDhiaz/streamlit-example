@@ -11,8 +11,17 @@ st.write("""
 This app predicts the **Iris flower** type!
 """)
 
-st.image(image, caption='Versicolor, Virginica, Setosa')
+col1, col2, col3 = st.columns(3)
 
+with col1:
+    st.write(' ')
+
+with col2:
+    st.image(image, caption='Versicolor, Virginica, Setosa')
+
+with col3:
+    st.write(' ')
+    
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
