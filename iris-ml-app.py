@@ -51,3 +51,5 @@ st.write(iris.target_names[prediction])
 
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
+
+st.success('IRIS Machine Learning Done!', icon:"✅")
