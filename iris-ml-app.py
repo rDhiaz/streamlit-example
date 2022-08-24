@@ -2,9 +2,6 @@ import streamlit as st
 import pandas as pd
 from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
-from PIL import Image
-image = Image.open('https://www.gardendesign.com/pictures/images/900x705Max/site_3/iris-louisiana-black-gamecock-iris-beardless-louisiana-iris-shutterstock-com_12592.jpg')
-#Import image
 
 st.write("""
 # Simple Iris Flower Prediction App
@@ -12,7 +9,7 @@ st.write("""
 This app predicts the **Iris flower** type!
 """)
 
-st.image(image, caption='Sunrise by the mountains') #Add image
+st.image(https://www.gardendesign.com/pictures/images/900x705Max/site_3/iris-louisiana-black-gamecock-iris-beardless-louisiana-iris-shutterstock-com_12592.jpg) #Add image
 
 st.sidebar.header('User Input Parameters')
 
