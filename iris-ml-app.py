@@ -30,8 +30,8 @@ st.subheader('User Input parameters')
 st.write(df)
 #iris = pd.read_csv('https://raw.githubusercontent.com/rDhiaz/streamlit-example/main/IRIS.csv')
 iris = datasets.load_iris()
-#X = iris.data
-#Y = iris.target
+X = iris.data
+Y = iris.target
 
 clf = RandomForestClassifier()
 clf.fit(X, Y)
